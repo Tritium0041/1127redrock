@@ -1,0 +1,12 @@
+version: '3.7'
+services: 
+  con1: 
+    image: level3image
+    volumes: 
+      - '.:/ping'
+    command: ['./ping/ping2.sh']
+  con2: 
+    image: level3image
+    volumes:
+      - '.:/ping'
+    command: ['./ping/ping1.sh']

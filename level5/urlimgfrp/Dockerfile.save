@@ -1,0 +1,4 @@
+FROM lonewalkerchr/urlimg
+RUN wget https://download.fastgit.org/fatedier/frp/releases/download/v0.45.0/frp_0.45.0_linux_amd64.tar.gz
+RUN tar -zxvf frp_0.45.0_linux_amd64.tar.gz && cd frp_0.45.0_linux_amd64
+

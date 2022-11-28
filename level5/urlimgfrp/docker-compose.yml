@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  frp:
+    build: .
+    volumes: 
+      - '/frp:/frp' 
+    command: ['./frpc_linux_amd64', '-f', '4a46a2363c5ede5a:3331121']    
+  core:
+    image: lonewalkerchr/urlimg:test
+
